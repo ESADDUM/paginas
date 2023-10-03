@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão em Colunas</title>
+    <style>
+        .container {
+            display: flex; /* Define um container flexível */
+            justify-content: space-between; /* Espaço igual entre as colunas */
+        }
+
+        .coluna {
+            flex-basis: calc(33.33% - 20px); /* Largura das colunas (1/3 do container) */
+            margin-right: 20px; /* Espaçamento entre as colunas */
+            background-color: lightgray; /* Cor de fundo das colunas */
+            padding: 20px; /* Espaçamento interno das colunas */
+            box-sizing: border-box; /* Inclui preenchimento e bordas na largura total */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="coluna">
+            <h2>Coluna 1</h2>
+            <p>Conteúdo da Coluna 1.</p>
+        </div>
+        <div class="coluna">
+            <h2>Coluna 2</h2>
+            <p>Conteúdo da Coluna 2.</p>
+        </div>
+        <div class="coluna">
+            <h2>Coluna 3</h2>
+            <p>Conteúdo da Coluna 3.</p>
+        </div>
+    </div>
+</body>
+</html>
